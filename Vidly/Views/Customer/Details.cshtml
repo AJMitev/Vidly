@@ -1,0 +1,15 @@
+﻿@model Vidly.Models.Customer
+
+@{
+    ViewBag.Title = "Custumer Details";
+
+}
+
+<h2>@Model.Name</h2>
+<ul>
+    <li><p class="lead">Membership Type: @Model.MembershipType.Name </p></li>
+    @if (Model.Birthdate != null)
+    {
+        <li><p class="lead">Birthdate: @Model.Birthdate.Value.ToShortDateString()</p></li>}
+
+</ul>

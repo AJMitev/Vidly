@@ -1,0 +1,36 @@
+﻿@model List<Vidly.Models.Movie>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>List of Movies</h2>
+
+<a href="movie/create" class="btn btn-primary">Create New Movie</a>
+@if (Model.Count == 0)
+{
+    <p>We didnt have any moves yet.</p>
+}
+else
+{
+    <table class="table table-bordered  table-hover ">
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td><a href="../movie/edit/@movie.Id">@movie.Name</a></td>
+                    <td>@movie.Genre.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
