@@ -212,6 +212,8 @@
     <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Database\DbContext.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
+    <Compile Include="Dtos\GenreDto.cs" />
+    <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -239,6 +241,10 @@
     <Compile Include="Migrations\201712171605163_PopulateNewInformation.cs" />
     <Compile Include="Migrations\201712171605163_PopulateNewInformation.Designer.cs">
       <DependentUpon>201712171605163_PopulateNewInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712201445548_PopulateNewGenres.cs" />
+    <Compile Include="Migrations\201712201445548_PopulateNewGenres.Designer.cs">
+      <DependentUpon>201712201445548_PopulateNewGenres.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -529,6 +535,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712171605163_PopulateNewInformation.resx">
       <DependentUpon>201712171605163_PopulateNewInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712201445548_PopulateNewGenres.resx">
+      <DependentUpon>201712201445548_PopulateNewGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

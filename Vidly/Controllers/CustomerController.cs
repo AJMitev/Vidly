@@ -6,7 +6,7 @@ using Vidly.ViewModels;
 using DbContext = Vidly.Database.DbContext;
 
 namespace Vidly.Controllers
-{
+{   
     public class CustomerController : Controller
     {
         private readonly DbContext _context;
@@ -24,9 +24,7 @@ namespace Vidly.Controllers
         // GET: Custumer
         public ActionResult Index()
         {
-            var custumers = _context.Customers.Include(c => c.MembershipType).ToList();
-
-            return View(custumers);
+            return View();
         }
 
         public ActionResult New()
