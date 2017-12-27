@@ -23,7 +23,7 @@ textarea {
     max-width: 280px;
 }
 
-.field-validation-error {
+.field-validation-error, label.error {
     color: red;
 }
 
@@ -38,3 +38,4 @@ textarea {
 #movies_wrapper {
     margin-top: 10px;
 }
+
