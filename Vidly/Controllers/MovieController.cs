@@ -23,7 +23,6 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
-        // GET: Movie
         public ActionResult Index()
         {
             if (User.IsInRole(RoleName.CanManageMovies))
